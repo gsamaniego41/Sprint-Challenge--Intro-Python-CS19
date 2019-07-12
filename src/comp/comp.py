@@ -42,7 +42,7 @@ print(b)
 print("Starts between C and G, inclusive:")
 c_to_g = ['C', 'D', 'E', 'F', 'G']
 c = [i.name for i in humans if i.name[0] in c_to_g]
-c.sort()
+# c.sort()
 print(c)
 
 # Write a list comprehension that creates a list of all the ages plus 10.
@@ -67,7 +67,7 @@ print(f)
 # list, except with all the names uppercase and the ages with 5 added to them.
 # The "humans" list should be unmodified.
 print("All names uppercase:")
-g = [i.name.upper() for i in humans]
+g = [Human(i.name.upper(), i.age + 5) for i in humans]
 print(g)
 
 # Write a list comprehension that contains the square root of all the ages.
